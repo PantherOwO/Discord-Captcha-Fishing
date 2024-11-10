@@ -1,0 +1,20 @@
+{
+   "webhook": "",
+   "domain": {
+      "url": ""
+   },
+   "bot": {
+      "token": "",
+      "clientid": "",
+      "guildid": ""
+   },
+   "owner": {
+      "id": ""
+   },
+   "profile": {
+      "pfp": {
+         "alter": true,
+         "changed": false
+      }
+   }
+}

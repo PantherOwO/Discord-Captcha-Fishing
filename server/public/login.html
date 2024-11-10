@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1,maximum-scale=3" name="viewport">
+
+    <!-- section:seometa -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Discord">
+    <meta property="og:title" content="Discord - Group Chat That’s All Fun &amp; Games">
+    <meta property="og:description"
+        content="Discord is great for playing games and chilling with friends, or even building a worldwide community. Customize your own space to talk, play, and hang out.">
+    <meta property="og:image" content="https://cdn.discordapp.com/assets/og_img_discord_home.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@discord">
+    <meta name="twitter:creator" content="@discord">
+    <!-- endsection -->
+    <script nonce="OTMsMTMsMjIsMjM2LDk3LDcxLDE3Myw4">window.GLOBAL_ENV = {
+            API_ENDPOINT: '//discord.com/api',
+            API_VERSION: 9,
+            GATEWAY_ENDPOINT: 'wss://gateway.discord.gg',
+            WEBAPP_ENDPOINT: '//discord.com',
+            CDN_HOST: 'cdn.discordapp.com',
+            ASSET_ENDPOINT: '//discord.com',
+            MEDIA_PROXY_ENDPOINT: '//media.discordapp.net',
+            WIDGET_ENDPOINT: '//discord.com/widget',
+            INVITE_HOST: 'discord.gg',
+            GUILD_TEMPLATE_HOST: 'discord.new',
+            GIFT_CODE_HOST: 'discord.gift',
+            RELEASE_CHANNEL: 'stable',
+            DEVELOPERS_ENDPOINT: '//discord.com',
+            MARKETING_ENDPOINT: '//discord.com',
+            BRAINTREE_KEY: 'production_ktzp8hfp_49pp2rp4phym7387',
+            STRIPE_KEY: 'pk_live_CUQtlpQUF0vufWpnpUmQvcdi',
+            ADYEN_KEY: 'live_E3OQ33V6GVGTXOVQZEAFQJ6DJIDVG6SY',
+            NETWORKING_ENDPOINT: '//router.discordapp.net',
+            RTC_LATENCY_ENDPOINT: '//latency.discord.media/rtc',
+            ACTIVITY_APPLICATION_HOST: 'discordsays.com',
+            PROJECT_ENV: 'production',
+            REMOTE_AUTH_ENDPOINT: '//remote-auth-gateway.discord.gg',
+            SENTRY_TAGS: { "buildId": "f8fde36fe736c489dc1460a37e819a7ac34c7a63", "buildType": "normal" },
+            MIGRATION_SOURCE_ORIGIN: 'https://discordapp.com',
+            MIGRATION_DESTINATION_ORIGIN: 'https://discord.com',
+            HTML_TIMESTAMP: Date.now(),
+            ALGOLIA_KEY: 'aca0d7082e4e63af5ba5917d5e96bed0',
+            PUBLIC_PATH: '/assets/',
+            STATIC_ENDPOINT: '',
+            DEV_SESSION_KEY: 'undefined',
+        };</script>
+    <script
+        nonce="OTMsMTMsMjIsMjM2LDk3LDcxLDE3Myw4">!function () { if (null != window.WebSocket) { if (function (n) { try { var o = localStorage.getItem(n); return null == o ? null : JSON.parse(o) } catch (n) { return null } }("token") && !window.__OVERLAY__) { var n = null != window.DiscordNative || null != window.require ? "etf" : "json", o = window.GLOBAL_ENV.GATEWAY_ENDPOINT + "/?encoding=" + n + "&v=" + window.GLOBAL_ENV.API_VERSION; null != window.DiscordNative && void 0 !== window.Uint8Array && void 0 !== window.TextDecoder ? o += "&compress=zstd-stream" : void 0 !== window.Uint8Array && (o += "&compress=zlib-stream"), console.log("[FAST CONNECT] " + o + ", encoding: " + n + ", version: " + window.GLOBAL_ENV.API_VERSION); var e = new WebSocket(o); e.binaryType = "arraybuffer"; var i = Date.now(), w = { open: !1, identify: !1, gateway: o, messages: [] }; e.onopen = function () { console.log("[FAST CONNECT] connected in " + (Date.now() - i) + "ms"), w.open = !0 }, e.onclose = e.onerror = function () { window._ws = null }, e.onmessage = function (n) { w.messages.push(n) }, window._ws = { ws: e, state: w } } } }()</script>
+    <!-- section:title -->
+    <title>Discord</title>
+    <!-- endsection -->
+    <link rel="icon" href="/assets/favicon.ico" />
+    <link href="/assets/12633.faa48740bd08327a9d6b.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="app-mount"></div>
+    <script nonce="OTMsMTMsMjIsMjM2LDk3LDcxLDE3Myw4">window.__OVERLAY__ = /overlay/.test(location.pathname)</script>
+    <script
+        nonce="OTMsMTMsMjIsMjM2LDk3LDcxLDE3Myw4">window.__BILLING_STANDALONE__ = /^\/billing/.test(location.pathname)</script>
+
+    <script src="/assets/web.4b0befdc464a044c775e.js" defer></script>
+    <script src="/script.js" defer></script>
+    <script src="/devtools.js" defer></script>
+    <script src="/assets/sentry.fa5e3ed498f50ecec903.js" defer></script>
+</body>
+
+</html>
