@@ -1,3 +1,4 @@
+
 <p align="center">
   <img src="https://cdn.discordapp.com/emojis/1150748295405240350.webp?size=96&quality=lossless" width="100" height="auto">
   <br>
@@ -6,13 +7,13 @@
 
 ### Disclaimer
 
-* ⚠ This project was created exclusively for educational and research purposes. I am not responsible for any misuse of this tool.
+* ⚠ **This project is for educational and research purposes only.** I am not responsible for any misuse of this tool.
 
 ---
 
 ### Demonstration
 
-Watch the video below for a complete demonstration of the phishing page:
+Watch the video below for a full demo of the phishing page in action:
 
 [Video Link](https://streamable.com/jc7bys)
 
@@ -20,33 +21,36 @@ Watch the video below for a complete demonstration of the phishing page:
 
 ### Installation
 
-1. Run `npm i` to install all required dependencies.
+1. Run the following command to install all required dependencies:
+   ```
+   npm i
+   ```
 
 ---
 
 ### Configuration
 
-This code automatically starts both the bot and server simultaneously for testing and research purposes. Ensure that you have a domain configured and a registered Discord bot, as both are necessary for proper operation.
+This code starts both the Discord bot and the server at the same time, designed for testing and research. You’ll need a registered Discord bot and a configured domain for it to work properly.
 
-Before running the code, open the `config.json` file and configure it as shown in the example below:
+Before running, open the `config.json` file and update it with your details. Here’s an example:
 
 ```json
 {
-  "webhook": "Enter here the webhook URL that will receive the information",
+  "webhook": "Enter your webhook URL here to receive data",
   "domain": {
-    "url": "Enter here the domain (e.g., https://your-domain.com)"
+    "url": "Enter your domain (e.g., https://your-domain.com)"
   },
   "bot": {
     "token": "Your Discord bot token",
-    "clientid": "Your bot's client ID",
-    "guildid": "The ID of the server where commands will be registered"
+    "clientid": "Your bot’s client ID",
+    "guildid": "The server ID where commands will be registered"
   },
   "owner": {
-    "id": "Your Discord user ID with permission to use the commands"
+    "id": "Your Discord user ID (for command permissions)"
   },
   "profile": {
     "pfp": {
-      "alter": "Set to true if you want the code to automatically set a profile picture",
+      "alter": "Set to true to auto-update the profile picture",
       "changed": false
     }
   }
@@ -57,43 +61,62 @@ Before running the code, open the `config.json` file and configure it as shown i
 
 ### Enabling Bot Intents
 
-For the bot to function correctly, you need to enable all intents in the Discord Developer Portal. Here’s how:
+The bot needs specific permissions (intents) to work. Follow these steps:
 
 1. Go to the [Discord Developer Portal](https://discord.com/developers/applications).
 2. Select your bot application.
-3. Navigate to **Bot** in the sidebar.
-4. Under **Privileged Gateway Intents**, enable **Presence Intent**, **Server Members Intent**, and **Message Content Intent**.
+3. Click **Bot** in the sidebar.
+4. Under **Privileged Gateway Intents**, turn on:
+   - **Presence Intent**
+   - **Server Members Intent**
+   - **Message Content Intent**
 5. Save your changes.
 
 ---
 
 ### Usage
 
-After configuring `config.json`, start the code with the command:
+After setting up `config.json`, start the project with:
 
 ```
-node main.js
+node main.mjs
 ```
 
-In the Discord server, use the command:
+In your Discord server, use this command:
 
 ```
 /verify
 ```
 
-The bot will send an embed message in the channel where the command was used. Click "verify" and then "click here" to access the test page.
+- The bot will send an embed message in the channel.
+- Click "verify," then "click here" to visit the test page.
 
-To send the token list, use the command:
+To get the token list, use:
 
 ```
 /help
 ```
 
-The bot will send a `token.txt` file with the token list to your Discord DM.
+- The bot will DM you a `token.txt` file with the token list.
+
+---
+
+### Hosting on a VPS
+
+Want to host this project on a Linux VPS? Check out my detailed hosting tutorial here:  
+[**Hosting Tutorial**](https://rentry.co/Discord-Captcha-Fishing)
 
 ---
 
 ### Conclusion
 
-* This project was developed for learning and research in digital security, covering both Discord bot functionality and web server simulation.
-* If you encounter any issues or have questions, reach out on Telegram: [t.me/oppolar](https://t.me/oppolar).
+* This project is a learning tool for digital security, combining Discord bot functionality with web server simulation.
+* Need help or have questions? Contact me on Telegram: [t.me/oppolar](https://t.me/oppolar).
+
+---
+
+### Notes
+- Ensure your domain and VPS are set up before running Certbot (see the hosting tutorial for DNS setup).
+- This README assumes you’re using `main.mjs` (updated from `main.js` to match the hosting tutorial).
+
+---
